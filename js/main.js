@@ -51,14 +51,15 @@
   function animateCount(el) {
     var target = parseInt(el.getAttribute('data-target'), 10) || 0;
     var prefix = el.getAttribute('data-prefix') || '';
+    var suffix = el.getAttribute('data-suffix') || '';
     var dur = 1400, start = null;
     function step(ts) {
       if (!start) start = ts;
       var p = Math.min((ts - start) / dur, 1);
       var eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
-      el.textContent = prefix + Math.floor(eased * target).toLocaleString();
+      el.textContent = prefix + Math.floor(eased * target).toLocaleString() + suffix;
       if (p < 1) requestAnimationFrame(step);
-      else el.textContent = prefix + target.toLocaleString();
+      else el.textContent = prefix + target.toLocaleString() + suffix;
     }
     requestAnimationFrame(step);
   }

@@ -53,6 +53,7 @@
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#summary">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="#excellence">Courses</a></li>
           <li class="nav-item"><a class="nav-link" href="#fdp">FDPs</a></li>
           <li class="nav-item"><a class="nav-link" href="#hackathon">Project Space</a></li>
           <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
@@ -90,6 +91,10 @@
     <div class="container">
       <div class="row g-4 text-center">
         <div class="col-6 col-md-3">
+          <div class="stat-num" data-target="900" data-suffix="+">0</div>
+          <div class="stat-label">Students Certified</div>
+        </div>
+        <div class="col-6 col-md-3">
           <div class="stat-num" data-target="160">0</div>
           <div class="stat-label">Student Projects</div>
         </div>
@@ -100,10 +105,6 @@
         <div class="col-6 col-md-3">
           <div class="stat-num" data-prefix="$" data-target="550">0</div>
           <div class="stat-label">USD in Claude Vouchers</div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="stat-num" data-target="7">0</div>
-          <div class="stat-label">Project Lifecycle Stages</div>
         </div>
       </div>
     </div>
@@ -134,6 +135,76 @@
             we have unlocked unprecedented speeds across institutional processes, turning complex,
             multi-hour operations into streamlined, minutes-long workflows.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACADEMIC EXCELLENCE ============ -->
+  <section class="section section-alt" id="excellence">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="eyebrow">Celebrating Academic Excellence</span>
+        <h2>900+ Students, Certified in Claude AI Development</h2>
+        <p class="section-sub">
+          Bridging the gap between classroom learning and industry execution — an exclusive
+          Aditya University &amp; Technical Hub milestone.
+        </p>
+      </div>
+
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="lead-text">
+            Through this collaborative initiative, <strong>900+ students</strong> have successfully
+            completed <strong>4 specialized Anthropic courses</strong> focused on cutting-edge AI development.
+          </p>
+          <p>
+            This intensive training represents a massive wave of future-ready innovators equipped with
+            practical, real-world AI fluency. To honor this dedication, every student receives a
+            <strong>prestigious hardcopy certificate</strong> upon completion — a verified testament to
+            their next-generation skills that helps them stand out to top-tier global employers.
+          </p>
+          <div class="row g-3 mt-1">
+            <div class="col-sm-6">
+              <div class="course-card">
+                <span class="course-num">01</span>
+                <h6>Building with the Claude API</h6>
+                <p>Mastering the fundamentals of programmatic AI integration.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="course-card">
+                <span class="course-num">02</span>
+                <h6>Claude Code in Action</h6>
+                <p>Implementing agentic, terminal-based developer tools in real time.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="course-card">
+                <span class="course-num">03</span>
+                <h6>Introduction to Agent Skills</h6>
+                <p>Crafting autonomous AI behaviors, tool use, and complex workflows.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="course-card">
+                <span class="course-num">04</span>
+                <h6>Introduction to MCP</h6>
+                <p>Connecting Claude securely to data sources and enterprise tools.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <figure class="image-card">
+            <img src="assets/cert-crowd.jpg" alt="900+ Aditya University students who completed the Anthropic Claude AI courses" class="img-fluid" loading="lazy" />
+            <figcaption>900+ future-ready innovators — certified across 4 Anthropic courses</figcaption>
+          </figure>
+          <div class="excellence-badges">
+            <span><i class="bi bi-people-fill"></i> 900+ students</span>
+            <span><i class="bi bi-mortarboard-fill"></i> 4 Anthropic courses</span>
+            <span><i class="bi bi-patch-check-fill"></i> Hardcopy certificates</span>
+          </div>
         </div>
       </div>
     </div>
@@ -344,28 +415,81 @@
         </div>
       </div>
 
-      <div class="browser-mock mt-5">
-        <div class="browser-bar">
-          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="url">https://projectspace.technicalhub.io/dashboard</span>
-        </div>
-        <img src="assets/platform-dashboard.jpg" alt="Project Specification Application dashboard showing 160 projects and the CAREERVERSE AI team" class="img-fluid d-block" loading="lazy" />
+      <!-- Projects showcase carousel -->
+      <div class="showcase-head text-center mt-5">
+        <span class="eyebrow light">Industry-Level Solutions</span>
+        <h3 class="text-white">Projects Built with Claude</h3>
+        <p class="text-light-muted mx-auto platform-intro">
+          A glimpse of the real, industry-grade solutions students designed and shipped on the platform —
+          spanning hardware, AI assistants, mobility, safety, and enterprise workflows.
+        </p>
       </div>
 
-      <div class="row g-4 mt-4 align-items-center">
-        <div class="col-md-5">
-          <figure class="image-card shot-login">
-            <img src="assets/platform-login.jpg" alt="Project Space team member login screen with roll-number OTP authentication" class="img-fluid" loading="lazy" />
-          </figure>
+      <div id="projectsCarousel" class="carousel slide project-carousel mt-3" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="AXI-APB Hybrid Interface"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="WorkPing"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Nexus"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="3" aria-label="Qlue"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="4" aria-label="Sanchari"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="5" aria-label="SafePulse"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="6" aria-label="CogniVision"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="7" aria-label="MailOra"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="8" aria-label="RTL Root-of-Trust Design"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="9" aria-label="Employee Onboarding"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="10" aria-label="Smart Airport Management"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="11" aria-label="IntellMind"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="12" aria-label="Smart Exam Evaluator"></button>
         </div>
-        <div class="col-md-7">
-          <h4 class="text-white">Secure, role-based access</h4>
-          <p class="text-light-muted mb-0">
-            Students sign in as team members using roll-number authentication and an OTP flow, then
-            move their registered idea through all seven project stages — with mentors, review panels,
-            and Claude-powered code analysis all working inside the same platform.
-          </p>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/proj-axi-apb.jpg" class="d-block" alt="AXI-APB Hybrid Interface — adaptive hybrid bus interface" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-workping.jpg" class="d-block" alt="WorkPing — intelligent workforce management platform" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-nexus.jpg" class="d-block" alt="Nexus — RAG-based multilingual offline AI assistant" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-qlue.jpg" class="d-block" alt="Qlue — AI-powered voice interview platform" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-sanchari.jpg" class="d-block" alt="Sanchari — AI-powered smart mobility and ride-pooling platform" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-safepulse.jpg" class="d-block" alt="SafePulse — real-time personal safety and smart navigation app" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-cognivision.jpg" class="d-block" alt="CogniVision — assistive-vision system for the visually impaired" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-mailora.jpg" class="d-block" alt="MailOra — AI inbox-based opportunity and deadline tracker" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-rtl-rot.jpg" class="d-block" alt="RTL Root-of-Trust Design — SystemVerilog hardware secure boot" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-onboarding.jpg" class="d-block" alt="Employee Onboarding — enterprise workflow automation hub" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-airport.jpg" class="d-block" alt="Smart Airport Management — AeroBot passenger issue reporting" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-intellmind.jpg" class="d-block" alt="IntellMind — full-stack AI-powered learning platform" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/proj-exam-evaluator.jpg" class="d-block" alt="Smart Exam Evaluator — AI exam evaluation and verification system" loading="lazy" />
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </section>
@@ -396,10 +520,40 @@
         </div>
       </div>
 
-      <figure class="image-card results-photo mt-4">
-        <img src="assets/results-crowd.jpg" alt="Hundreds of Aditya University students at the Project Space event" class="img-fluid" loading="lazy" />
-        <figcaption>Every participating group harnessed Claude to dismantle their problem statements</figcaption>
-      </figure>
+      <div id="resultsCarousel" class="carousel slide results-carousel mt-4" data-bs-ride="carousel" data-bs-interval="4500" data-bs-pause="hover">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Aerial view of participants"></button>
+          <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="1" aria-label="Participants at the venue"></button>
+          <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="2" aria-label="Team at the Technical Hub sign"></button>
+          <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="3" aria-label="Team discussion"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/results-aerial.jpg" class="d-block" alt="Aerial view of hundreds of students walking through the Aditya University campus" loading="lazy" />
+            <div class="carousel-caption"><p>Hundreds of future-ready innovators across the Aditya University campus</p></div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/results-crowd.jpg" class="d-block" alt="Large crowd of Aditya University students at the Project Space event" loading="lazy" />
+            <div class="carousel-caption"><p>Every participating group harnessed Claude to dismantle their problem statements</p></div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/results-thsign.jpg" class="d-block" alt="Student team at the Technical Hub signage on campus" loading="lazy" />
+            <div class="carousel-caption"><p>Technical Hub × Aditya University — a long-standing strategic partnership</p></div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/results-easel.jpg" class="d-block" alt="Students collaborating around a project easel during the event" loading="lazy" />
+            <div class="carousel-caption"><p>Collaborative, hands-on problem solving with modern AI</p></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#resultsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#resultsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
       <div class="row g-4 mt-3 text-center">
         <div class="col-md-4">
@@ -460,6 +614,7 @@
           <h6>Explore</h6>
           <ul>
             <li><a href="#summary">Overview</a></li>
+            <li><a href="#excellence">Courses</a></li>
             <li><a href="#fdp">FDPs</a></li>
             <li><a href="#hackathon">Project Space</a></li>
             <li><a href="#platform">Platform</a></li>
