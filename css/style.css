@@ -179,6 +179,7 @@ p { color: #3a4254; }
 .section-dark .image-card { background: rgba(255,255,255,.04); color: #b8c2e0; border-color: rgba(255,255,255,.1); }
 .gallery .image-card img { height: 260px; }
 .winners-photo img { height: auto; max-height: none; object-fit: contain; background: #0d1c4d; }
+.winners-photo.h-100 img { height: 320px; object-fit: cover; }
 .results-photo img { max-height: 420px; }
 .shot-login { box-shadow: 0 16px 40px rgba(0,0,0,.4); }
 
@@ -383,7 +384,7 @@ p { color: #3a4254; }
   background: linear-gradient(transparent, rgba(13,28,77,.85));
 }
 .results-carousel .carousel-caption p { margin: 0; font-size: .95rem; font-weight: 500; }
-.results-carousel .carousel-indicators { margin-bottom: .6rem; }
+.results-carousel .carousel-indicators { margin-bottom: .6rem; flex-wrap: wrap; row-gap: 8px; padding-inline: 2rem; }
 
 /* ---------- Back to top ---------- */
 .back-to-top {
